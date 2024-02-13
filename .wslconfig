@@ -1,0 +1,108 @@
+#>>>>>>>>>> [ Standard settings ] <<<<<<<<<#
+
+[wsl2]
+
+# Limits VM memory to use
+## Default: 50% available RAM
+memory=12GB
+
+# Limits the VM to use
+## Default: All available CPUs
+processors=4
+
+# Specify a custom Linux kernel to use with your installed distros
+## Default: Kernel used can be found at https://github.com/microsoft/WSL2-Linux-Kernel
+# kernel=C:\\wslkernel\\kernel-msft-6
+
+# Allows the kernel modules to be available to load from your installed distros
+## Default: true
+kernelModules=true
+
+# Sets additional kernel parameters
+## Default: empty list
+kernelCommandLine=cgroup_no_v1=all
+
+# Sets amount of swap storage space to 8GB
+## Default: 25% of available RAM
+swap=0GB
+
+# Sets swapfile path location
+## Default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx
+# swapfile=C:\\wslswap\\wsl-swap.vhdx
+
+# Allows automatic port-forwarding from WSL localhost to Windows localhost
+## Default: rue
+localhostforwarding=true
+
+# Allows nested virtualization
+## Default: true
+nestedVirtualization=true
+
+# Output console showing contents of dmesg when opening a WSL distro for debugging
+## Default: false
+debugConsole=false
+
+# Allows support for GUI applications (WSLg) in WSL
+## Default: true
+guiApplications=true
+
+# Limits the number of milliseconds that a VM is idle, before it is shut down
+## Default: 60000
+vmIdleTimeout=300000
+
+# Run WSL in "Safe Mode" which disables many features
+## Default: false
+safeMode=false
+
+# Sets the network connection type used by WSL
+## Default: NAT
+networkingMode=mirrored
+
+# Allows the Windows Firewall rules, as well as rules specific to Hyper-V traffic, to filter WSL network traffic
+## Default: true
+firewall=true
+
+# Changes how DNS requests are proxied from WSL to Windows
+## Default: false
+dnsTunneling=false
+
+# Enforces WSL to use Windows HTTP proxy information
+## Default: false
+autoProxy=false
+
+#>>>>>>>>>> [ Experimental settings ] <<<<<<<<<#
+
+[experimental]
+
+# Automatically releases cached memory after detecting idle CPU usage
+## Default: disabled
+autoMemoryReclaim=dropcache
+
+# Newly created VHD will be set to sparse automatically
+## Default: false
+sparseVhd=true
+
+# Allows or bypass DNS requests tunneled from Linux to use the cached names within Windows
+## Default: false
+### Depends on: dnsTunneling=true
+useWindowsDnsCache=false
+
+# Allows Windows to extract the question from the DNS request and attempt to resolve it, ignoring the unknown records
+## Default: false
+### Depends on: dnsTunneling=true
+bestEffortDnsParsing=false
+
+# Configures how long (in milliseconds) WSL will wait for retrieving HTTP proxy information when starting WSL
+## Default: 1000
+### Depends on: autoProxy=true
+initialAutoProxyTimeout=1000
+
+# Specifies which ports Linux applications can bind to, even if that port is used in Windows
+## Default: empty list
+### Depends on: networkingMode=mirrored
+#ignoredPorts=
+
+# Allows Windows to assign an IP address to WSL in addition to 127.0.0.1
+## Default: false
+### Depends on: networkingMode=mirrored
+hostAddressLoopback=true

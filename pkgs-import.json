@@ -1,0 +1,83 @@
+{
+        "$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+        "CreationDate" : "2024-02-13T01:19:01.541-00:00",
+        "Sources" :
+        [
+                {
+                        "Packages" :
+                        [
+                                {
+                                        "PackageIdentifier" : "Docker.DockerDesktop"
+                                },
+                                {
+                                        "PackageIdentifier" : "GitHub.GitHubDesktop"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.Git"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.Edge"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.AppInstaller"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.UI.Xaml.2.8"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.VCLibs.Desktop.14"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.DevHome"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.WindowsTerminal"
+                                },
+                                {
+                                        "PackageIdentifier" : "RedHat.Podman-Desktop"
+                                },
+                                {
+                                        "PackageIdentifier" : "7zip.7zip"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.VisualStudioCode"
+                                },
+                                {
+                                        "PackageIdentifier" : "SomePythonThings.WingetUIStore"
+                                },
+                                {
+                                        "PackageIdentifier" : "RedHat.Podman"
+                                },
+                                {
+                                        "PackageIdentifier" : "suse.RancherDesktop"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.PowerShell"
+                                },
+                                {
+                                        "PackageIdentifier" : "gerardog.gsudo"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.PowerToys"
+                                },
+                                {
+                                        "PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
+                                }
+                        ],
+                        "SourceDetails" :
+                        {
+                                "Argument" : "https://cdn.winget.microsoft.com/cache",
+                                "Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+                                "Name" : "winget",
+                                "Type" : "Microsoft.PreIndexed.Package"
+                        }
+                }
+        ],
+        "WinGetVersion" : "1.6.10121"
+}
